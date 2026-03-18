@@ -63,7 +63,7 @@ const Research = () => {
                                     ))}
                                 </div>
 
-                                {(item.github || item.live) && (
+                                {((item.github && item.github !== '#') || (item.live && item.live !== '#')) && (
                                     <div style={{ display: 'flex', gap: '8px', marginTop: '20px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
                                         {item.github && item.github !== '#' && (
                                             <a href={item.github} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ padding: '6px 12px', fontSize: '11px' }}>
@@ -72,7 +72,7 @@ const Research = () => {
                                         )}
                                         {item.live && item.live !== '#' && (
                                             <a href={item.live} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '6px 12px', fontSize: '11px' }}>
-                                                <ExternalLink size={12} /> View Certificates
+                                                <ExternalLink size={12} /> Check Certificate
                                             </a>
                                         )}
                                     </div>

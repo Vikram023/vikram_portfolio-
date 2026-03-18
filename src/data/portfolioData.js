@@ -44,11 +44,11 @@ export const portfolioData = {
   ],
   research: [
     {
-      title: "Introduction to Internet of Things",
+      title: "Introduction to Internet of Things Certificate",
       focus: "NPTEL",
       description: "Completed NPTEL certification in IoT, covering connected systems, data, and security fundamentals.",
       github: "#",
-      live: "#",
+      live: "/Introduction to Internet of Things.pdf",
       metrics: { level: "Elite", date: "Nov 2025", type: "Certification" },
       details: ["Secured Elite certification among 50,000+ candidates."]
     },
