@@ -22,7 +22,7 @@ export const portfolioData = {
       coursework: ["Data Structures & Algorithms", "DBMS", "OOP", "Computer Networks", "Operating Systems"]
     },
     stats: {
-      problemsSolved: "200+",
+      problemsSolved: "120+",
       streak: "",
       rating: "",
       leetcode: "LeetCode"
@@ -57,7 +57,7 @@ export const portfolioData = {
       focus: "Udemy",
       description: "Certificate covering C fundamentals and problem solving.",
       github: "#",
-      live: "#",
+      live: "/c programming.pdf",
       metrics: { date: "Feb 2024", type: "Certification" },
       details: []
     },
