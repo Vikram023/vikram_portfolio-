@@ -94,7 +94,7 @@ const Hero = () => {
                     <a href="#contact" className="btn-secondary">
                         Get in Touch
                     </a>
-                    <a href="/finalupdatecv.pdf" target="_blank" className="btn-third">Resume</a>
+                    <a href="/Placement_CV1.pdf" target="_blank" className="btn-third">Resume</a>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '16px', paddingLeft: '8px' }}>
                         {[
                             { icon: <Github size={18} />, href: portfolioData.contact.github },
