@@ -81,7 +81,7 @@ export const portfolioData = {
       techStack: ["HTML", "CSS", "MongoDB", "Express.js", "React.js", "Node.js", "REST APIs", "JWT"],
       metrics: ["Multi-role platform", "Role-based auth", "Dashboards"],
       github: "#",
-      live: "#",
+      live: "https://agri-connect-green.vercel.app/",
       description: "Full-stack MERN web application with dashboards, order tracking, and role-based authorization."
     },
     {
@@ -93,7 +93,7 @@ export const portfolioData = {
       techStack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       metrics: ["Dashboard UI", "Recommendations", "Progress tracking"],
       github: "#",
-      live: "#",
+      live: "https://retrofit023.gt.tc/",
       description: "Health tracking platform with smart recommendations, user management, and progress visualization."
     }
   ],
