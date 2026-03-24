@@ -35,7 +35,11 @@ const Projects = () => {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <AnimatePresence mode="popLayout">
-                    {filtered.map((project, i) => (
+                    {filtered.map((project, i) => {
+                        const hasGithub = typeof project.github === 'string' && project.github.trim() !== '#' && project.github.trim() !== '';
+                        const hasLive = typeof project.live === 'string' && project.live.trim() !== '#' && project.live.trim() !== '';
+
+                        return (
                         <motion.div
                             key={project.id}
                             layout
@@ -82,14 +86,14 @@ const Projects = () => {
 
                                     {/* Links */}
                                     <div style={{ display: 'flex', gap: '8px' }}>
-                                        {project.github !== '#' && (
+                                        {hasGithub && (
                                             <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ padding: '7px 14px', fontSize: '12px' }}>
                                                 <Github size={13} /> Code
                                             </a>
                                         )}
-                                        {project.live !== '#' && (
+                                        {hasLive && (
                                             <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '7px 14px', fontSize: '12px' }}>
-                                                <ExternalLink size={13} /> Live
+                                                <ExternalLink size={13} /> Visit Website
                                             </a>
                                         )}
                                     </div>
@@ -108,7 +112,8 @@ const Projects = () => {
                                 </div>
                             </div>
                         </motion.div>
-                    ))}
+                        );
+                    })}
                 </AnimatePresence>
             </div>
         </section>
