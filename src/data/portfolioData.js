@@ -62,6 +62,15 @@ export const portfolioData = {
       details: []
     },
     {
+      title: "Mastering C++: From Object-Oriented Programming to Dynamic Programming",
+      focus: "Lovely Professional University",
+      description: "Certificate of Merit for completing a C++ skill development course focused on OOP and dynamic programming.",
+      github: "#",
+      live: "#",
+      metrics: { grade: "A+", date: "Jul 2025", type: "Certification" },
+      details: ["Organized by Centre for Professional Enhancement (LPU)."]
+    },
+    {
       title: "Programming in Python",
       focus: "Udemy",
       description: "Certificate covering Python fundamentals and programming practice.",
