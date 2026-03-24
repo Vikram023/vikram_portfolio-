@@ -6,7 +6,7 @@ export const portfolioData = {
     subheadline: "MERN Stack • REST APIs • Authentication"
   },
   about: {
-    bio: "Full Stack MERN developer focused on building responsive, secure web applications with clean UI and reliable backend APIs.",
+    bio: "I’m a Full-Stack Developer skilled in the MERN stack, passionate about building responsive and scalable web applications. I enjoy solving real-world problems through technology, with experience in projects like AgriConnect and Retrofit. Strong in problem-solving and continuous learning, I’m focused on creating impactful digital solutions.",
     focus: [
       "Full-stack MERN development",
       "Role-based authentication & authorization",
@@ -66,7 +66,7 @@ export const portfolioData = {
       focus: "Lovely Professional University",
       description: "Certificate of Merit for completing a C++ skill development course focused on OOP and dynamic programming.",
       github: "#",
-      live: "#",
+      live: "/Mastering C++.png",
       metrics: { grade: "A+", date: "Jul 2025", type: "Certification" },
       details: ["Organized by Centre for Professional Enhancement (LPU)."]
     },
@@ -75,7 +75,7 @@ export const portfolioData = {
       focus: "Binary Blitz",
       description: "Certificate of Appreciation for active participation in the Binary Blitz Web Hackathon.",
       github: "#",
-      live: "#",
+      live: "/BINARYBLITZ%20Web%20Hackathon.jpg",
       metrics: { status: "Participant", type: "Hackathon" },
       details: [
         "Recognized for web development skills, problem-solving ability, and innovative contribution.",
