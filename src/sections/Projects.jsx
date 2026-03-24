@@ -36,8 +36,11 @@ const Projects = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <AnimatePresence mode="popLayout">
                     {filtered.map((project, i) => {
-                        const hasGithub = typeof project.github === 'string' && project.github.trim() !== '#' && project.github.trim() !== '';
-                        const hasLive = typeof project.live === 'string' && project.live.trim() !== '#' && project.live.trim() !== '';
+                        const githubUrl = typeof project.github === 'string' ? project.github.trim() : '';
+                        const liveUrl = typeof project.live === 'string' ? project.live.trim() : '';
+                        const hasGithub = githubUrl !== '#' && githubUrl !== '';
+                        const hasLive = liveUrl !== '#' && liveUrl !== '';
+                        const normalizedLiveUrl = hasLive && /^https?:\/\//i.test(liveUrl) ? liveUrl : `https://${liveUrl}`;
 
                         return (
                         <motion.div
@@ -87,12 +90,29 @@ const Projects = () => {
                                     {/* Links */}
                                     <div style={{ display: 'flex', gap: '8px' }}>
                                         {hasGithub && (
-                                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ padding: '7px 14px', fontSize: '12px' }}>
+                                            <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ padding: '7px 14px', fontSize: '12px' }}>
                                                 <Github size={13} /> Code
                                             </a>
                                         )}
                                         {hasLive && (
-                                            <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '7px 14px', fontSize: '12px' }}>
+                                            <a
+                                                href={normalizedLiveUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                style={{
+                                                    display: 'inline-flex',
+                                                    alignItems: 'center',
+                                                    gap: '8px',
+                                                    padding: '7px 14px',
+                                                    fontSize: '12px',
+                                                    fontWeight: '600',
+                                                    borderRadius: '8px',
+                                                    textDecoration: 'none',
+                                                    background: '#4f6ef7',
+                                                    color: '#ffffff',
+                                                    border: '1px solid rgba(255,255,255,0.08)'
+                                                }}
+                                            >
                                                 <ExternalLink size={13} /> Visit Website
                                             </a>
                                         )}
