@@ -71,6 +71,18 @@ export const portfolioData = {
       details: ["Organized by Centre for Professional Enhancement (LPU)."]
     },
     {
+      title: "Binary Blitz Web Hackathon — Certificate of Appreciation",
+      focus: "Binary Blitz",
+      description: "Certificate of Appreciation for active participation in the Binary Blitz Web Hackathon.",
+      github: "#",
+      live: "#",
+      metrics: { status: "Participant", type: "Hackathon" },
+      details: [
+        "Recognized for web development skills, problem-solving ability, and innovative contribution.",
+        "Issued to Vikram Kumar Bhardwaj."
+      ]
+    },
+    {
       title: "Programming in Python",
       focus: "Udemy",
       description: "Certificate covering Python fundamentals and programming practice.",
