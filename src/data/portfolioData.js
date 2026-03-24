@@ -93,7 +93,7 @@ export const portfolioData = {
       techStack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       metrics: ["Dashboard UI", "Recommendations", "Progress tracking"],
       github: "#",
-      live: "https://retrofit023.gt.tc/",
+      live: "http://retrofit023.gt.tc/sat6.html",
       description: "Health tracking platform with smart recommendations, user management, and progress visualization."
     }
   ],
